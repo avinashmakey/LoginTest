@@ -1,4 +1,5 @@
 language: java
-install: mvn install -DskipTests=false -Dgpg.skip=true
-jdk:
-  - openjdk6
+deploy:
+  provider: heroku
+  api_key: "b91fc523-d30c-4cce-94f8-34d40887b178"
+  app: logintest
