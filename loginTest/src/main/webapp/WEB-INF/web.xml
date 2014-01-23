@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>loginTest</display-name>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>register.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AccountRegisterServlet</display-name>
+    <servlet-name>AccountRegisterServlet</servlet-name>
+    <servlet-class>servlet.loginTest.AccountRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountRegisterServlet</servlet-name>
+    <url-pattern>/AccountRegisterServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
