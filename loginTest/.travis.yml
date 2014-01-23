@@ -1,5 +1,4 @@
 language: java
-deploy:
-  provider: heroku
-  api_key: "1ae3e1bf-3031-4f6a-8858-57d5d0eabe90"
-  app: logintest-jude 
+install: mvn install -DskipTests=false -Dgpg.skip=true
+jdk:
+  - openjdk6
